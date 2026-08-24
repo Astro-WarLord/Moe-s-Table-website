@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Colours sampled directly from the Moe's Table logo:
+       background #30412F, cream #FFEFDF */
+    --background: 117 16% 22%;
+    --foreground: 30 55% 94%;
+    --card: 117 16% 26%;
+    --card-foreground: 30 55% 94%;
+    --popover: 117 16% 26%;
+    --popover-foreground: 30 55% 94%;
+    --primary: 117 22% 34%;
+    --primary-foreground: 30 55% 94%;
+    --secondary: 117 14% 16%;
+    --secondary-foreground: 30 55% 94%;
+    --muted: 117 12% 20%;
+    --muted-foreground: 117 10% 65%;
+    --accent: 117 28% 40%;
+    --accent-foreground: 30 55% 94%;
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 117 14% 27%;
+    --input: 117 14% 18%;
+    --ring: 117 28% 40%;
+    --chart-1: 117 28% 40%;
+    --chart-2: 35 50% 50%;
+    --chart-3: 0 0% 60%;
+    --chart-4: 90 20% 45%;
+    --chart-5: 27 60% 55%;
+    --radius: 0.25rem;
+    /* Kaushan Script is the closest free match to the logo's hand-brushed
+       "Moe's" lettering — loaded via index.html. Swap the family name here
+       if you'd rather try a different script. */
+    --font-heading: 'Kaushan Script', cursive;
+    --font-body: ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Kaushan Script', cursive;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --sidebar-background: 117 20% 10%;
+    --sidebar-foreground: 30 55% 94%;
+    --sidebar-primary: 117 22% 34%;
+    --sidebar-primary-foreground: 30 55% 94%;
+    --sidebar-accent: 117 14% 14%;
+    --sidebar-accent-foreground: 30 55% 94%;
+    --sidebar-border: 117 14% 24%;
+    --sidebar-ring: 117 28% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
+
+@layer utilities {
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px hsl(117 30% 55% / 0.5);
+  }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .grain {
+    background-image: radial-gradient(hsl(0 0% 100% / 0.025) 1px, transparent 1px);
+    background-size: 3px 3px;
+  }
+}
