@@ -22,7 +22,7 @@ export default function Hero({ image }) {
         <div className="h-full w-px bg-foreground/10" />
       </div>
 
-      {/* Background image */}
+      {/* Background */}
       <motion.div style={{ scale: imgScale }} className="absolute inset-0">
         <Image
           src={image}
@@ -39,23 +39,15 @@ export default function Hero({ image }) {
         className="relative z-10 flex h-full flex-col justify-between px-5 py-24 sm:px-[5vw] sm:py-[6vh]"
       >
         {/* =====================================================
-            TOP INFORMATION
+            TOP LABELS
         ===================================================== */}
 
-        {/* Desktop */}
-        <div className="hidden items-start justify-between text-sm uppercase tracking-[0.3em] text-muted-foreground sm:flex">
-          <span>Marrickville · Sydney</span>
-
-          <span>Brunch · Coffee · Good Company</span>
-        </div>
-
-        {/* Mobile */}
-        <div className="flex flex-col items-center gap-3 text-center sm:hidden">
-          <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-muted-foreground">
+        <div className="flex flex-col gap-2 text-center text-[9px] uppercase tracking-[0.18em] text-muted-foreground sm:flex-row sm:items-start sm:justify-between sm:text-sm sm:text-left sm:tracking-[0.3em]">
+          <span className="whitespace-nowrap">
             Marrickville · Sydney
           </span>
 
-          <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-muted-foreground/80">
+          <span className="whitespace-nowrap">
             Brunch · Coffee · Good Company
           </span>
         </div>
@@ -76,7 +68,7 @@ export default function Hero({ image }) {
         ===================================================== */}
 
         <div className="flex items-end justify-between">
-          <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground sm:text-sm sm:tracking-[0.3em]">
+          <span className="text-[9px] uppercase tracking-[0.16em] text-muted-foreground sm:text-sm sm:tracking-[0.3em]">
             Est. Marrickville
           </span>
 
@@ -86,7 +78,7 @@ export default function Hero({ image }) {
               repeat: Infinity,
               duration: 2.2,
             }}
-            className="flex flex-col items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-accent sm:text-sm sm:tracking-[0.3em]"
+            className="flex flex-col items-center gap-2 text-[9px] uppercase tracking-[0.16em] text-accent sm:text-sm sm:tracking-[0.3em]"
           >
             <span>Scroll</span>
 
