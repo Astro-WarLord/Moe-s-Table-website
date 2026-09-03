@@ -1,12 +1,16 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import { Plus, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import { Plus, ChevronLeft, ChevronRight, FileText } from "lucide-react";
 import { Image } from "@/components/ui/image";
 
 import lebaneseBrekkie from "@/components/cafe/images/Lebanese_breakfast.jpg";
 import moesHash from "@/components/cafe/images/Kelby_s_Hash.jpg";
 import jengaFrenchToast from "@/components/cafe/images/French_Toast.jpg";
 import shakshuka from "@/components/cafe/images/Shakshuka.jpg";
+// `?url` forces Vite to hand back the built file's URL instead of trying to
+// parse a PDF as a JS/asset module — needed since PDFs aren't in Vite's
+// default asset-type list the way images are.
+import menuPdf from "@/components/cafe/images/Moes_Menu Current_style_MAY_26.pdf?url";
 
 // NOTE: notes/prices below are placeholders written to match the dish photos
 // and the site's existing tone — swap in the real menu copy/pricing whenever
@@ -84,7 +88,7 @@ function Specimen({ data, index }) {
       </dl>
 
       {/* Add to Order - Calls phone number */}
-      <a
+      
         href="tel:+61295645165"
         className="mt-5 flex items-center justify-between border border-border px-4 py-3 text-xs uppercase tracking-[0.25em] transition-colors hover:border-accent hover:bg-accent hover:text-accent-foreground"
       >
@@ -171,20 +175,20 @@ export default function MenuGallery() {
         {SPECIMENS.map((s, i) => (
           <Specimen key={s.id} data={s} index={i} />
         ))}
-        <a
-          href="https://www.google.com/maps/place/Moe's+Table/@-33.9096826,151.1546649,3a,75y,90t/data=!3m7!1e2!3m5!1sCIABIhBFrNTLy6-0C-AniLQMgYjc!2e10!3e12!7i3072!8i4080!4m7!3m6!1s0x6b12b064f61212c3:0xcc77a42d9b4f595c!8m2!3d-33.9095139!4d151.1547559!10e9!16s%2Fg%2F1tmy564c?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+        
+          href={menuPdf}
           target="_blank"
           rel="noreferrer"
           className="group flex w-[60vw] shrink-0 snap-center flex-col items-center justify-center gap-4 border border-dashed border-border px-6 text-center transition-colors hover:border-accent md:w-[26vw] lg:w-[18vw]"
         >
           <span className="flex h-14 w-14 items-center justify-center rounded-full border border-accent/60 text-accent transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
-            <ExternalLink className="h-5 w-5" />
+            <FileText className="h-5 w-5" />
           </span>
           <span className="text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
             View Full Menu
           </span>
           <span className="text-xs text-muted-foreground">
-            Every dish, drink and price on Google
+            Every dish, drink and price · PDF
           </span>
         </a>
       </div>

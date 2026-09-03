@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import LOGO from "@/components/cafe/images/font.jpeg";
+import logoMascot from "@/components/cafe/images/MOES_LOGOS_WEB-01.png";
 import { Instagram } from "lucide-react";
 
 export default function SiteFooter() {
@@ -43,9 +44,11 @@ export default function SiteFooter() {
         <div className="flex flex-col gap-8 border-b border-border pb-8 md:flex-row md:items-start md:justify-between md:gap-6 md:pb-10">
           {/* Brand */}
           <div className="text-center md:text-left">
-            <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl md:text-5xl">
-              Moe's Table
-            </h2>
+            <img
+              src={logoMascot}
+              alt="Moe's Table"
+              className="mx-auto h-24 w-auto sm:h-28 md:mx-0 md:h-32"
+            />
 
             <p className="mt-2 text-xs uppercase tracking-[0.18em] text-muted-foreground sm:mt-3 sm:text-sm sm:tracking-[0.25em]">
               Marrickville · Sydney
@@ -74,7 +77,7 @@ export default function SiteFooter() {
 
             {/* Instagram */}
             <div className="mt-5">
-              <a
+              
                 href="https://www.instagram.com/moes_table/"
                 target="_blank"
                 rel="noreferrer"
@@ -87,14 +90,14 @@ export default function SiteFooter() {
 
             {/* Menu / Visit */}
             <div className="mt-4 flex items-center justify-center gap-8 md:justify-end">
-              <a
+              
                 href="#menu"
                 className="text-xs uppercase tracking-[0.2em] text-foreground/80 transition-colors hover:text-accent sm:text-sm sm:tracking-[0.25em]"
               >
                 Menu
               </a>
 
-              <a
+              
                 href="#visit"
                 className="text-xs uppercase tracking-[0.2em] text-foreground/80 transition-colors hover:text-accent sm:text-sm sm:tracking-[0.25em]"
               >
@@ -114,7 +117,7 @@ export default function SiteFooter() {
               Find Us
             </p>
 
-            <a
+            
               href="https://www.google.com/maps/dir/?api=1&destination=Moe's+Table+293+Marrickville+Rd+Marrickville+NSW+2204"
               target="_blank"
               rel="noreferrer"
@@ -141,14 +144,14 @@ export default function SiteFooter() {
             </p>
 
             <p className="text-sm leading-relaxed text-foreground/80">
-              <a
+              
                 href="tel:+61295645165"
                 className="block transition-colors hover:text-accent"
               >
                 (02) 9564 5165
               </a>
 
-              <a
+              
                 href="mailto:hello@moestable.com.au"
                 className="mt-1 block break-words transition-colors hover:text-accent"
               >
