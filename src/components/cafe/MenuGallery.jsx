@@ -88,7 +88,7 @@ function Specimen({ data, index }) {
       </dl>
 
       {/* Add to Order - Calls phone number */}
-      
+      <a
         href="tel:+61295645165"
         className="mt-5 flex items-center justify-between border border-border px-4 py-3 text-xs uppercase tracking-[0.25em] transition-colors hover:border-accent hover:bg-accent hover:text-accent-foreground"
       >
@@ -175,7 +175,7 @@ export default function MenuGallery() {
         {SPECIMENS.map((s, i) => (
           <Specimen key={s.id} data={s} index={i} />
         ))}
-        
+        <a
           href={menuPdf}
           target="_blank"
           rel="noreferrer"

@@ -77,7 +77,7 @@ export default function SiteFooter() {
 
             {/* Instagram */}
             <div className="mt-5">
-              
+              <a
                 href="https://www.instagram.com/moes_table/"
                 target="_blank"
                 rel="noreferrer"
@@ -90,14 +90,14 @@ export default function SiteFooter() {
 
             {/* Menu / Visit */}
             <div className="mt-4 flex items-center justify-center gap-8 md:justify-end">
-              
+              <a
                 href="#menu"
                 className="text-xs uppercase tracking-[0.2em] text-foreground/80 transition-colors hover:text-accent sm:text-sm sm:tracking-[0.25em]"
               >
                 Menu
               </a>
 
-              
+              <a
                 href="#visit"
                 className="text-xs uppercase tracking-[0.2em] text-foreground/80 transition-colors hover:text-accent sm:text-sm sm:tracking-[0.25em]"
               >
@@ -117,7 +117,7 @@ export default function SiteFooter() {
               Find Us
             </p>
 
-            
+            <a
               href="https://www.google.com/maps/dir/?api=1&destination=Moe's+Table+293+Marrickville+Rd+Marrickville+NSW+2204"
               target="_blank"
               rel="noreferrer"
@@ -144,14 +144,14 @@ export default function SiteFooter() {
             </p>
 
             <p className="text-sm leading-relaxed text-foreground/80">
-              
+              <a
                 href="tel:+61295645165"
                 className="block transition-colors hover:text-accent"
               >
                 (02) 9564 5165
               </a>
 
-              
+              <a
                 href="mailto:hello@moestable.com.au"
                 className="mt-1 block break-words transition-colors hover:text-accent"
               >
