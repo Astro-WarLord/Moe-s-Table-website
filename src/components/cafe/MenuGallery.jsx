@@ -21,7 +21,7 @@ const SPECIMENS = [
     name: "Lebanese Brekkie",
     image: lebaneseBrekkie,
     roots: "Lebanese kitchen",
-    notes: "Grilled flatbread · Labneh · Lebanese sausage · Zaatar · Heirloom tomato",
+    notes: "Scrambled Eggs · Labneh · Lebanese sausage · Zaatar · Fresh tomato · Stringy Halloumi · Warm Zataar Lebanese Bread",
     price: "24.90",
   },
   {
@@ -29,7 +29,7 @@ const SPECIMENS = [
     name: "Moe's Hash",
     image: moesHash,
     roots: "The house classic",
-    notes: "Poached egg · Sujuk · Crispy potatoes · Hollandaise · White Toscano",
+    notes: "Poached egg · Sujuk · Baked Chat potatoes · Baby Spinach · Hollandaise · White Toscano",
     price: "25.90",
   },
   {
@@ -37,7 +37,7 @@ const SPECIMENS = [
     name: "Jenga French Toast",
     image: jengaFrenchToast,
     roots: "Turkish bread jenga",
-    notes: "Bacon · Grilled banana · Burnt ricotta cream · Maple syrup",
+    notes: "Smoked Bacon · Caramalised banana · Burnt ricotta cream · Maple syrup · Fresh Berries · Vanilla Bean Crackers · Berry Glaze & Edible Flowers",
     price: "24.90",
   },
   {
