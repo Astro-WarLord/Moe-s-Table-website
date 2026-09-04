@@ -22,7 +22,7 @@ const SPECIMENS = [
     image: lebaneseBrekkie,
     roots: "Lebanese kitchen",
     notes: "Grilled flatbread · Labneh · Lebanese sausage · Zaatar · Heirloom tomato",
-    price: "26.50",
+    price: "24.90",
   },
   {
     id: "02",
@@ -30,7 +30,7 @@ const SPECIMENS = [
     image: moesHash,
     roots: "The house classic",
     notes: "Poached egg · Sujuk · Crispy potatoes · Hollandaise · White Toscano",
-    price: "24.90",
+    price: "25.90",
   },
   {
     id: "03",
@@ -38,7 +38,7 @@ const SPECIMENS = [
     image: jengaFrenchToast,
     roots: "Turkish bread jenga",
     notes: "Bacon · Grilled banana · Burnt ricotta cream · Maple syrup",
-    price: "23.90",
+    price: "24.90",
   },
   {
     id: "04",
@@ -46,7 +46,7 @@ const SPECIMENS = [
     image: shakshuka,
     roots: "Lebanese kitchen",
     notes: "Baked eggs · Spiced tomato · Crispy pastry · Sprouts · Stringy halloumi",
-    price: "22.50",
+    price: "25.90",
   },
 ];
 
