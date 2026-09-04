@@ -58,7 +58,7 @@ export default function Hero({ image }) {
 
         <div className="flex flex-col items-center justify-center px-2 text-center">
           <p className="max-w-2xl text-base leading-relaxed text-foreground/90 sm:text-lg md:text-xl">
-            A table where two kitchens meet — Lebanese heritage and modern
+            A table where two kitchens meet — Lebanese roots and modern
             Australian brunch, plated slow and shared loud.
           </p>
         </div>

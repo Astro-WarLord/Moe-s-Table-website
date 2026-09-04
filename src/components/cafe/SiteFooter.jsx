@@ -152,10 +152,10 @@ export default function SiteFooter() {
               </a>
 
               <a
-                href="mailto:hello@moestable.com.au"
+                href="mailto:moestable@outlook.com"
                 className="mt-1 block break-words transition-colors hover:text-accent"
               >
-                hello@moestable.com.au
+                moestable@outlook.com
               </a>
             </p>
           </div>

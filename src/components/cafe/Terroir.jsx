@@ -64,7 +64,7 @@ export default function Terroir({ image }) {
             kitchens meet.
           </h2>
           <p className="mt-6 max-w-md text-sm leading-relaxed text-foreground/70">
-            We cook from two larders at once — the spice route of the Levant and
+            We cook from two culinary cultures at once — the spice route of the Levant and
             the produce of the Australian east coast. Every dish is a small
             conversation between Beirut and Marrickville.
           </p>
