@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Clock, Phone } from "lucide-react";
 import { Image } from "@/components/ui/image";
+import ReservationWidget from "@/components/cafe/ReservationWidget";
 
 const HOURS = [
   { day: "Mon – Fri", time: "7:00 — 15:00" },
@@ -33,6 +34,7 @@ function useVibe() {
 
 export default function Counter({ image }) {
   const vibe = useVibe();
+  const [showBooking, setShowBooking] = useState(false);
   const dotColor =
     vibe === "Peak" ? "bg-accent" : vibe === "Lively" ? "bg-lime-400" : vibe === "Quiet" ? "bg-emerald-500" : "bg-red-500";
 
@@ -69,6 +71,20 @@ export default function Counter({ image }) {
             <br />
             table.
           </h2>
+
+          <button
+            type="button"
+            onClick={() => setShowBooking((v) => !v)}
+            className="mt-6 inline-flex w-fit items-center gap-3 border border-accent bg-accent px-6 py-3 text-xs uppercase tracking-[0.25em] text-accent-foreground transition-colors hover:bg-transparent hover:text-accent"
+          >
+            {showBooking ? "Hide Booking" : "Book Now"}
+          </button>
+
+          {showBooking && (
+            <div className="mt-6">
+              <ReservationWidget />
+            </div>
+          )}
 
           <div className="mt-8 grid gap-8 sm:grid-cols-2">
             <div>
