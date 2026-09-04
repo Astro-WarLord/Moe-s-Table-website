@@ -45,7 +45,7 @@ const SPECIMENS = [
     name: "Shakshuka",
     image: shakshuka,
     roots: "Lebanese kitchen",
-    notes: "Baked eggs · Spiced tomato · Crispy pastry · Sprouts · Stringy halloumi",
+    notes: "Baked eggs · Crushed tomato & chickpea sauce · Spinach · Kibbeh · Stringy halloumi · Crunchy zaatar bread",
     price: "25.90",
   },
 ];

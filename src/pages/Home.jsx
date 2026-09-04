@@ -6,8 +6,7 @@ import Terroir from "@/components/cafe/Terroir";
 import Counter from "@/components/cafe/Counter";
 import SiteFooter from "@/components/cafe/SiteFooter";
 
-// NEW HEADER IMAGE - Save this image as table_spread.jpg in src/components/cafe/images/
-import HERO from "@/components/cafe/images/bg2.jpg";
+import HERO from "@/components/cafe/images/landingpage.jpg";
 import INTERIOR from "@/components/cafe/images/cafe_vibe.jpg";
 
 const PANTRY = "https://media.base44.com/images/public/6a8bb59a69323f7d755d92bf/27970fc38_generated_image.png";
